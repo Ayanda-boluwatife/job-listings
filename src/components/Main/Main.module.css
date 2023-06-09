@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  bottom: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    bottom: 6rem;
+  }
+}
+/*# sourceMappingURL=Main.module.css.map */

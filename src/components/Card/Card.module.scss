@@ -1,0 +1,174 @@
+.card, .cardFeatured{
+    background-color: #FFFFFF;
+    padding: 2.4rem;
+    margin: 4rem 2.4rem;
+    box-shadow: 0rem 1.5rem 2rem -0.5rem rgba(13, 113, 130, 0.15);
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 111rem;
+}
+
+.cardFeatured{
+    border-left: 0.5rem solid #5CA5A5;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.img{
+    position: absolute;
+    top: -10%;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.company{
+    font-family: League Spartan;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    letter-spacing: 0rem;
+    color: #5CA5A5;
+    margin-right: 3.3rem;
+}
+
+.new{
+    font-family: League Spartan;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.011rem;
+    background-color: #5CA5A5;
+    border-radius: 1.2rem;
+    color: #FFFFFF;
+    width: 5rem;
+    text-align: center;
+    margin-right: 0.8rem;
+}
+
+.featured{
+    font-family: League Spartan;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.011rem;
+    background-color: #2B3939;
+    border-radius: 1.2rem;
+    color: #FFFFFF;
+    width: 8rem;
+    text-align: center;
+}
+
+.position{
+    font-family: League Spartan;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    color: #2B3939;
+    margin: 0rem;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.info{
+    font-family: League Spartan;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -0.012rem;
+    text-align: left;
+    color: #7C8F8F;
+    margin: 0.8rem 0rem 0rem 0rem;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem;
+    gap: 1.6rem;
+    margin: 0rem;
+}
+
+.line{
+    border: 0.1rem solid #B7C4C4;
+    margin: 1.5rem 0rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card, .cardFeatured{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cardPart1{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 2.4rem;
+    }
+
+    .img{
+        position: static;
+        width: 8.8rem;
+        height: 8.8rem;
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .container3{
+        max-width: 31.4rem;
+    }
+}
+
+@media screen and (min-width: 853px) {
+    .container3{
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .company{
+        font-size: 1.8rem;
+        line-height: 1.7rem;
+    }
+
+    .company, .new, .featured{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .position{
+        font-size: 2.2rem;
+    }
+
+    .position:hover{
+        color: #5CA5A5;
+        cursor: pointer;
+    }
+
+    .info{
+        font-size: 1.8rem;
+        letter-spacing: -0.014rem;
+    }
+
+    .card, .cardFeatured{
+        margin: 2.4rem auto;
+        width: 82vw;
+        max-width: 111rem;
+        padding: 3rem 4rem;
+    }
+}

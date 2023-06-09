@@ -1,0 +1,37 @@
+.properties {
+  color: #5CA5A5;
+  font-family: League Spartan;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: -0.012rem;
+  text-align: left;
+  padding: 0.5rem 0.8rem 0.2rem 0.8rem;
+  background-color: #EEF6F6;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  list-style-type: none;
+  border-radius: 0.4rem;
+}
+
+.propertiesHeader {
+  color: #5CA5A5;
+  font-family: League Spartan;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: -0.012rem;
+  text-align: left;
+  padding: 0.5rem 0.8rem 0.2rem 0.8rem;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 992px) {
+  .properties:hover {
+    background-color: #5CA5A5;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=Propertie.module.css.map */
